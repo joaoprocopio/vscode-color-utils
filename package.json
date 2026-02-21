@@ -49,19 +49,20 @@
     "vscode:publish": "vsce publish --no-dependencies"
   },
   "dependencies": {
-    "colorjs.io": "^0.5.2"
+    "colorjs.io": "^0.6.1"
   },
   "devDependencies": {
-    "@types/node": "^24.3.1",
-    "@types/vscode": "^1.74.0",
-    "@typescript-eslint/eslint-plugin": "^8.42.0",
-    "@typescript-eslint/parser": "^8.42.0",
+    "@types/node": "^25.3.0",
+    "@types/vscode": "^1.109.0",
+    "@typescript-eslint/eslint-plugin": "^8.56.0",
+    "@typescript-eslint/parser": "^8.56.0",
+    "@vscode/vsce": "^3.7.1",
     "eslint": "^9.34.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "prettier": "^3.6.2",
-    "tsdown": "^0.14.2",
-    "typescript": "^5.9.2"
+    "prettier": "^3.8.1",
+    "tsdown": "^0.20.3",
+    "typescript": "^5.9.3"
   }
 }
