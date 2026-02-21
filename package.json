@@ -1,68 +1,68 @@
 {
-  "type": "module",
-  "publisher": "joaoprocopio",
-  "name": "vscode-color-utils",
-  "displayName": "Color Utils",
-  "version": "0.0.5",
-  "packageManager": "pnpm@10.15.1",
-  "categories": [
-    "Formatters"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/joaoprocopio/vscode-color-utils.git"
-  },
-  "engines": {
-    "vscode": "^1.74.0",
-    "node": ">=22.11.0"
-  },
-  "icon": "icon.png",
-  "main": "./out/extension.js",
-  "activationEvents": [],
-  "contributes": {
-    "commands": [
-      {
-        "command": "vscode-color-utils.convert",
-        "title": "Color Utils: Convert color format"
-      },
-      {
-        "command": "vscode-color-utils.clear",
-        "title": "Color Utils: Clear diagnostics"
-      }
+    "type": "module",
+    "publisher": "joaoprocopio",
+    "name": "vscode-color-utils",
+    "displayName": "Color Utils",
+    "version": "0.0.5",
+    "packageManager": "pnpm@10.15.1",
+    "categories": [
+        "Formatters"
     ],
-    "menus": {
-      "commandPalette": [
-        {
-          "command": "vscode-color-utils.convert",
-          "when": "editor.hasSelection"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/joaoprocopio/vscode-color-utils.git"
+    },
+    "engines": {
+        "vscode": "^1.74.0",
+        "node": ">=22.11.0"
+    },
+    "icon": "icon.png",
+    "main": "./out/extension.js",
+    "activationEvents": [],
+    "contributes": {
+        "commands": [
+            {
+                "command": "vscode-color-utils.convert",
+                "title": "Color Utils: Convert color format"
+            },
+            {
+                "command": "vscode-color-utils.clear",
+                "title": "Color Utils: Clear diagnostics"
+            }
+        ],
+        "menus": {
+            "commandPalette": [
+                {
+                    "command": "vscode-color-utils.convert",
+                    "when": "editor.hasSelection"
+                }
+            ]
         }
-      ]
+    },
+    "scripts": {
+        "clean": "git clean -xdf out node_modules",
+        "build": "tsdown",
+        "watch": "tsdown --watch",
+        "lint": "eslint src",
+        "vscode:prepublish": "pnpm build",
+        "vscode:package": "vsce package --no-dependencies --out out",
+        "vscode:publish": "vsce publish --no-dependencies"
+    },
+    "dependencies": {
+        "colorjs.io": "^0.6.1"
+    },
+    "devDependencies": {
+        "@types/node": "^25.3.0",
+        "@types/vscode": "^1.74.0",
+        "@typescript-eslint/eslint-plugin": "^8.56.0",
+        "@typescript-eslint/parser": "^8.56.0",
+        "@vscode/vsce": "^3.7.1",
+        "eslint": "^9.34.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.5",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "prettier": "^3.8.1",
+        "tsdown": "^0.20.3",
+        "typescript": "^5.9.3"
     }
-  },
-  "scripts": {
-    "clean": "git clean -xdf out node_modules",
-    "build": "tsdown",
-    "watch": "tsdown --watch",
-    "lint": "eslint src",
-    "vscode:prepublish": "pnpm build",
-    "vscode:package": "vsce package --no-dependencies --out out",
-    "vscode:publish": "vsce publish --no-dependencies"
-  },
-  "dependencies": {
-    "colorjs.io": "^0.6.1"
-  },
-  "devDependencies": {
-    "@types/node": "^25.3.0",
-    "@types/vscode": "^1.109.0",
-    "@typescript-eslint/eslint-plugin": "^8.56.0",
-    "@typescript-eslint/parser": "^8.56.0",
-    "@vscode/vsce": "^3.7.1",
-    "eslint": "^9.34.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.5",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "prettier": "^3.8.1",
-    "tsdown": "^0.20.3",
-    "typescript": "^5.9.3"
-  }
 }
