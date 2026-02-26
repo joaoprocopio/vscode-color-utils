@@ -5,7 +5,7 @@
     "description": "Color-related utilities for Visual Studio Code. Convert between different color formats.",
     "displayName": "Color Utils",
     "icon": "icon.png",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "packageManager": "pnpm@10.15.1",
     "categories": [
         "Formatters"
