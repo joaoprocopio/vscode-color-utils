@@ -6,7 +6,6 @@
     "displayName": "Color Utils",
     "icon": "icon.png",
     "version": "0.0.6",
-    "packageManager": "pnpm@10.15.1",
     "categories": [
         "Formatters"
     ],
@@ -18,7 +17,7 @@
         "vscode": "^1.74.0",
         "node": ">=22.11.0"
     },
-    "main": "./out/extension.js",
+    "main": "./dist/extension.mjs",
     "activationEvents": [],
     "contributes": {
         "commands": [
@@ -53,15 +52,13 @@
         "colorjs.io": "^0.6.1"
     },
     "devDependencies": {
-        "@types/node": "^25.3.0",
+        "@types/node": "^25.3.1",
         "@types/vscode": "^1.74.0",
-        "@typescript-eslint/eslint-plugin": "^8.56.0",
-        "@typescript-eslint/parser": "^8.56.0",
+        "@typescript-eslint/eslint-plugin": "^8.56.1",
+        "@typescript-eslint/parser": "^8.56.1",
         "@vscode/vsce": "^3.7.1",
         "eslint": "^9.34.0",
         "eslint-config-prettier": "^10.1.8",
-        "eslint-plugin-prettier": "^5.5.5",
-        "eslint-plugin-simple-import-sort": "^12.1.1",
         "prettier": "^3.8.1",
         "tsdown": "^0.20.3",
         "typescript": "^5.9.3"
