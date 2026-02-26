@@ -72,6 +72,8 @@ export function activate(context: vscode.ExtensionContext) {
                     try {
                         let converted = command.convert(text);
 
+                        console.log({ converted });
+
                         edit.replace(selection, converted);
                     } catch {
                         const diagnostic = new vscode.Diagnostic(

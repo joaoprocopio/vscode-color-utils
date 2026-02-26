@@ -5,7 +5,7 @@
     "description": "Color-related utilities for Visual Studio Code. Convert between different color formats.",
     "displayName": "Color Utils",
     "icon": "icon.png",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "categories": [
         "Formatters"
     ],
@@ -40,12 +40,12 @@
         }
     },
     "scripts": {
-        "clean": "git clean -xdf out node_modules",
+        "clean": "git clean -xdf dist node_modules",
         "build": "tsdown",
         "watch": "tsdown --watch",
         "lint": "eslint src",
         "vscode:prepublish": "pnpm build",
-        "vscode:package": "vsce package --no-dependencies --out out",
+        "vscode:package": "vsce package --no-dependencies --out dist",
         "vscode:publish": "vsce publish --no-dependencies"
     },
     "dependencies": {
