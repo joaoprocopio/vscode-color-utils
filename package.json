@@ -2,7 +2,9 @@
     "type": "module",
     "publisher": "joaoprocopio",
     "name": "vscode-color-utils",
+    "description": "Color-related utilities for Visual Studio Code. Convert between different color formats.",
     "displayName": "Color Utils",
+    "icon": "icon.png",
     "version": "0.0.5",
     "packageManager": "pnpm@10.15.1",
     "categories": [
@@ -16,7 +18,6 @@
         "vscode": "^1.74.0",
         "node": ">=22.11.0"
     },
-    "icon": "icon.png",
     "main": "./out/extension.js",
     "activationEvents": [],
     "contributes": {
